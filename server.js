@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({
 app.use(cors())
 // index page
 app.get('/', function (req, res) {
-    res.send('<h1 align="center">SERVER IS RUNNING<h1>');
+    res.send('<h1 align="center" style="color:red;padding:20%;">SERVER IS RUNNING!!!<h1>');
     });
 // CRUD PRODUCT
 app.get('/api/products', db.getAllProducts);
